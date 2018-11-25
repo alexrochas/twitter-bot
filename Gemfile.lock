@@ -8,6 +8,8 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     dotenv (0.7.0)
     equalizer (0.0.11)
+    faraday (0.15.3)
+      multipart-post (>= 1.2, < 3)
     http (3.3.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -21,7 +23,12 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     multipart-post (2.0.0)
     naught (1.1.0)
+    octokit (4.13.0)
+      sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.0.3)
+    sawyer (0.8.1)
+      addressable (>= 2.3.5, < 2.6)
+      faraday (~> 0.8, < 1.0)
     simple_oauth (0.3.1)
     thread_safe (0.3.6)
     twitter (6.2.0)
@@ -44,7 +51,8 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  octokit
   twitter (~> 6.2)
 
 BUNDLED WITH
-   1.16.3
+   1.17.1
