@@ -1,7 +1,9 @@
 require 'twitter'
 require 'octokit'
 require 'pp'
-require 'dotenv/load'
+require 'dotenv'
+
+Dotenv.load
 
 client = Octokit::Client.new(:login => 'alexrochas', :password => ENV['GITHUB_PASS'], per_page: 200)
 # client.auto_paginate = true
